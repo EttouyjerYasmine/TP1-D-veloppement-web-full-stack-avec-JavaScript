@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Express - Page d'accueil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      color: #333;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin-top: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenue sur l'API Express de démonstration</h1>
+  <p>Essayez les routes suivantes :</p>
+  <ul>
+    <li><a href="/api/users" target="_blank">/api/users</a> - Tous les utilisateurs</li>
+    <li><a href="/api/users/1" target="_blank">/api/users/1</a> - Utilisateur avec ID 1</li>
+    <li><a href="/api/users/2" target="_blank">/api/users/2</a> - Utilisateur avec ID 2</li>
+    <li><a href="/api/users/3" target="_blank">/api/users/3</a> - Utilisateur avec ID 3</li>
+  </ul>
+
+  <p>Vous pouvez également tester la création d'un nouvel utilisateur avec une requête POST sur <code>/api/users</code> via Postman ou Thunder Client.</p>
+
+  <h2>Exemple JSON pour POST :</h2>
+  <pre>
+{
+  "nom": "Ettouyjer",
+  "prenom": "Yasmine",
+  "age": 21
+}
+  </pre>
+</body>
+</html>
